@@ -9,7 +9,7 @@ resource "aws_instance" "one" {
   instance_type   = "t2.micro"
   key_name        = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone = "us-east-1a"
+  availability_zone = "us-east-1c"
   user_data       = <<EOF
 #!/bin/bash
 sudo -i
@@ -28,7 +28,7 @@ resource "aws_instance" "two" {
   instance_type   = "t2.micro"
   key_name        = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone = "us-east-1b"
+  availability_zone = "us-east-1d"
   user_data       = <<EOF
 #!/bin/bash
 sudo -i
