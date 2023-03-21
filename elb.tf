@@ -1,6 +1,6 @@
 resource "aws_elb" "bar" {
   name               = "mounika-terraform-elb"
-  availability_zones = ["us-east-1a", "us-east-1b"]
+  availability_zones = ["us-east-1c", "us-east-1d"]
 
   listener {
     instance_port     = 80
