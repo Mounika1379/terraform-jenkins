@@ -21,6 +21,6 @@ resource "aws_elb" "bar" {
   cross_zone_load_balancing = true
   idle_timeout              = 400
   tags = {
-    Name = "mounika-tf-elb"
+    Name = "mounika-terraform-elb"
   }
 }
