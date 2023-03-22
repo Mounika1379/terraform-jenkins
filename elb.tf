@@ -1,6 +1,6 @@
 resource "aws_elb" "five" {
   name              = "mounika-terraform-elb"
-  availability_zones = ["ap-south-1a", "ap-south-1b"]
+  availability_zones = ["ap-south-1b", "ap-south-1a"]
   listener {
     instance_port     = 80
     instance_protocol = "http"
