@@ -4,7 +4,7 @@ access_key = "AKIA3OWTCUQACKQBTXYZ"
 secret_key = "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"
 }
 resource "aws_instance" "one" {
-  ami                   = "ami-005f9685cb30f234b"
+  ami                   = "ami-0f8ca728008ff5af4"
   instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
@@ -22,7 +22,7 @@ EOF
   }
 }
 resource "aws_instance" "two" {
-  ami                   = "ami-005f9685cb30f234b"
+  ami                   = "ami-0f8ca728008ff5af4"
   instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
