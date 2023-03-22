@@ -2,7 +2,7 @@ provider "aws" {
 region = "ap-south-1"
 }
 
-resource "aws _instance" "one" {
+resource "aws_instance" "one" {
   ami                   = "ami-005f9685cb30f234b"
   instance_type         = "t2.micro"
   key_name              = "mounika"
