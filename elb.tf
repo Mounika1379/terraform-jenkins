@@ -1,4 +1,4 @@
-resource "aws_elb" "bal" {
+resource "aws_elb" "five" {
   name              = "mounika-terraform-elb"
   availability_zones = ["ap-south-1a", "ap-south-1b"]
   listener {
