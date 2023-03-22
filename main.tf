@@ -62,3 +62,7 @@ resource "aws_security_group" "three" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+resource "aws_s3_bucket" "four" {
+  bucket = "mounikabucketterra"
+}
+}  
