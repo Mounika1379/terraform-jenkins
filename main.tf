@@ -43,7 +43,7 @@ resource "aws_security_group" "three" {
   ingress {
     from_port   = 22
     to_port     = 22
-    protocal    = "tcp"
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
@@ -55,7 +55,7 @@ resource "aws_security_group" "three" {
   egress {
     from_port   = 0
     to_port     = 0
-    protocal    = "-1"
+    protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
