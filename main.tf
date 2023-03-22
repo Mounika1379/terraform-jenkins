@@ -20,7 +20,7 @@ EOF
     Name = "server-1"
   }
 }
-resorce "aws_instance" "two" {
+resource "aws_instance" "two" {
   ami                   = "ami-005f9685cb30f234b"
   instance_type         = "t2.micro"
   key_name              = "mounika"
