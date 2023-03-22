@@ -3,9 +3,9 @@ resource "aws_elb" "five" {
   availability_zones = ["ap-south-1a", "ap-south-1b"]
   listener {
     instance_port     = 80
-    instance_protocal = "httpd"
+    instance_protocol = "httpd"
     lb_port           = 80
-    lb_protocal       = "httpd"
+    lb_protocol       = "httpd"
   }
   health_check {
     healthy_threshold   = 2
