@@ -23,11 +23,11 @@ EOF
 }
 resource "aws_instance" "two" {
   ami                   = "ami-0f8ca728008ff5af4"
-  instance_type         = "t2.medium"
+  instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone     = "ap-south-1c"
-  user_data             = <<EOF
+  availability_zone     = "ap-south-1b"
+  user_data              + <<EOF
 #!/bin/bash
 sudo -i
 yum install httpd -y
