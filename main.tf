@@ -1,5 +1,5 @@
 provider "aws" {
-region = "us-east-1"
+region = "ap-south-1"
 }
 
 resource "aws _instance" "one" {
@@ -7,7 +7,7 @@ resource "aws _instance" "one" {
   instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_id = [aws_security_group.three.id]
-  availability_zone     = "us-east-1a"
+  availability_zone     = "ap-south-1a"
   user_data             = <<EOF
 #!/bin/bash
 sudo -i
@@ -25,7 +25,7 @@ resorce "aws_instance" "two" {
   instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_id = [aws_security_group.three.id]
-  availability_zone     = "us-east-1b"
+  availability_zone     = "ap-south-1b"
   user_data             = <<EOF
 #!/bin/bash
 sudo -i
