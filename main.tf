@@ -6,7 +6,7 @@ resource "aws_instance" "one" {
   ami                   = "ami-005f9685cb30f234b"
   instance_type         = "t2.micro"
   key_name              = "mounika"
-  vpc_security_group_id = [aws_security_group.three.id]
+  vpc_security_group_ids = [aws_security_group.three.id]
   availability_zone     = "ap-south-1a"
   user_data             = <<EOF
 #!/bin/bash
@@ -24,7 +24,7 @@ resource "aws_instance" "two" {
   ami                   = "ami-005f9685cb30f234b"
   instance_type         = "t2.micro"
   key_name              = "mounika"
-  vpc_security_group_id = [aws_security_group.three.id]
+  vpc_security_group_ids = [aws_security_group.three.id]
   availability_zone     = "ap-south-1b"
   user_data             = <<EOF
 #!/bin/bash
