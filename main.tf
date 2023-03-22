@@ -25,7 +25,7 @@ resource "aws_instance" "two" {
   instance_type         = "t2.micro"
   key_name              = "mounika"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone     = "ap-south-1b"
+  availability_zone     = "ap-south-1c"
   user_data             = <<EOF
 #!/bin/bash
 sudo -i
