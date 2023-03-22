@@ -63,6 +63,6 @@ resource "aws_security_group" "three" {
   }
 }
 resource "aws_s3_bucket" "four" {
-  bucket = "mounikabucketterra"
+  bucket = "mounika123bucketterra"
 }
 }  
